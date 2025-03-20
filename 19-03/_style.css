@@ -3,8 +3,10 @@ button{
 }
 fieldset h1{
     text-align: center;
+    text-decoration: underline;
 }
 
 .ala{
     padding-left: 25px;
+    text-decoration: underline;
 }
