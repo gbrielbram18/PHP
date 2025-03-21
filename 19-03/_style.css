@@ -1,6 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+}
+
+
+
 button{
    text-decoration-color: black;
 }
+
+
 fieldset h1{
     text-align: center;
     text-decoration: underline;
@@ -9,4 +21,81 @@ fieldset h1{
 .ala{
     padding-left: 25px;
     text-decoration: underline;
+    color: blue;
+}
+
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 1s ease;
+}
+
+
+header{
+    max-width: 80rem;
+    width: 100%;
+    padding: 1.25rem 2rem;
+    margin: 0 auto;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header span{
+    text-decoration: underline;
+    color:  white;
+    font-size: 35px;
+
+}
+
+
+nav a:hover{
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+
+.container{
+    max-width: 80rem;
+    border: 1px solid grey;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 10px;
+    
+
+}
+
+
+li{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset marquee{
+    color: black solid 50px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.lorem{
+    padding-left: 10px;
+}
+
+
+fieldset{
+    background: white;
+}
+
+iframe{
+    padding: 15px;
+    padding-left: 110;
 }

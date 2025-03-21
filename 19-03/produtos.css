@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-color: black;
+    border-width: 2px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table th {
+    background: red;
+    color: #f0f0f0;
+    height: 30px;
+}
+
+table tr:nth-child(even){
+    background-color: blueviolet;
+    color: #fff;
+}
