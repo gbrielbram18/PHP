@@ -27,6 +27,9 @@ $lastName4 = " andrade";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de nomes</title>
+
+    <link rel="stylesheet" href="list_name.css">
+    
 </head>
 <body>
 
@@ -71,7 +74,7 @@ $lastName4 = " andrade";
         </table>
         <br><br>
 
-        <button><a href="lista_nomes.php">lista de usuarios</a></button>
+        <button><a href="table.php">lista de produtos</a></button>
 
 
 
