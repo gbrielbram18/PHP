@@ -38,4 +38,7 @@ echo "Vazio: ".$vazio." Tipo: ".getType($vazio) ;
 
 
 
+
+
+
 ?>
