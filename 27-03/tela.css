@@ -16,5 +16,14 @@ th , td {
 }
 
 th{
-    background-color: #f2f2f2;
+    background: #f2f2f2;
+    text-align: center;
 }
+
+
+.tdVariavel{
+    background: orange;
+
+}
+
+
