@@ -1,6 +1,6 @@
 <?php
-$dia = "sabado ou domingo";
-$semana=" dia util";
+$dia = "sabado";
+
 
 // or ||
 
