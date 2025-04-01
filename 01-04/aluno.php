@@ -1,7 +1,7 @@
 <?php
 
 
-$nota = 6;
+$nota = 7;
 $nome = "gabriel";
 
 
