@@ -1,9 +1,9 @@
 <?php
-$a = '10';
-$b = 10;
+$a = '10'; //string
+$b = 10; //int
 
 
-if ($a == $b) {
+if ($a === $b) {
     echo "os valores deste numero sao identicos";
 } else {
     echo "o valor deste numero esta em string";
