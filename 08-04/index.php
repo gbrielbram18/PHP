@@ -20,11 +20,22 @@ $cursos = [
 ];
 
 $produtos =[
-    ["nome"=> "Notebook","preco" =>3500, "estoque"=>10],
+    ["nome"=> "Notebook","preco" =>3500, "estoque"=>0],
     ["nome"=> "Tablet","preco" =>899.99, "estoque"=>8],
     ["nome"=> "Fone JBL","preco" =>150.99, "estoque"=>10],
     
 ];
+
+//funmções axuiliares
+function formatarPreco($preco){
+    return 'R$' . number_format($preco,2,',','.');
+};
+function temEstoque($qunatidade){
+    return $qunatidade >0;
+
+}
+
+
 
 ?>
 
@@ -42,6 +53,13 @@ $produtos =[
 
     <div class="container">
         <h1>Lista de frutas</h1>
+        <hr>
+       
+        <div>
+            <button><a href="pets.php">Lista de Pets</a></button>
+        </div>
+        <hr>
+
 
         <h2>1. Array Indexado Simples</h2>
 
@@ -52,6 +70,7 @@ $produtos =[
         </ul>
 
         <hr>
+
         <h3>2. Array Associativo em tabela</h3>
         <table>
             <tr>
@@ -109,10 +128,14 @@ $produtos =[
                     <td><?= $produto['preco']?></td>
                     <td><?= $produto['estoque']?></td>
                     <!--<th><?= $produto['estoque'] >= 5 ?"disponivel": "indisponivel " ?></th>-->
+                    <td style="color: <?= temEstoque($produto['estoque']) ? 'green':'red'?>">
+                        <?= temEstoque($produto['estoque']) ?'Sim':'Nao' ?>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>
 
+        
 
     </div>
 
