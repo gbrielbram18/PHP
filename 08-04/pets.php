@@ -25,7 +25,7 @@ $pets = [
 
 <h1>Lista de Pets</h1>
 
-<div>
+<div class="container">
 <table>
 <tr>
     <th>Nome</th>
