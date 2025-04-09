@@ -19,10 +19,35 @@ $pets = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Pets</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Lista de Pets</h1>
+
+<div>
+<table>
+<tr>
+    <th>Nome</th>
+    <th>Tipo</th>
+    <th>idade</th>
+    <th>preço</th>
+</tr>
+
+<?php foreach($pets as $pet):?>
+<tr>
+    <td><?= $pet['nome'] ?></td>
+    <td><?=$pet['tipo']?></td>
+    <td><?=$pet['idade']?></td>
+    <td><?=$pet['preco']?></td>
+</tr>
+<?php endforeach;?>
+
+</table>
+</div>
+
+
+
 
     
 </body>
