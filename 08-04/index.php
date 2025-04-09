@@ -19,6 +19,13 @@ $cursos = [
     ]
 ];
 
+$produtos =[
+    ["nome"=> "Notebook","preco" =>3500, "estoque"=>10],
+    ["nome"=> "Tablet","preco" =>899.99, "estoque"=>8],
+    ["nome"=> "Fone JBL","preco" =>150.99, "estoque"=>10],
+    
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +91,27 @@ $cursos = [
                 <td>iu</td>
             </tr>
         <?php endforeach ?>
+
+        <hr>
+
+        <h5>5. Produtos com função</h5>
+
+        <table>
+            <tr>
+                <th>Produtos</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Disponivel</th>
+            </tr>
+            <?php foreach($produtos as $produto):?>
+                <tr>
+                    <td><?= $produto['nome'] ?></td>
+                    <td><?= $produto['preco']?></td>
+                    <td><?= $produto['estoque']?></td>
+                    <!--<th><?= $produto['estoque'] >= 5 ?"disponivel": "indisponivel " ?></th>-->
+                </tr>
+            <?php endforeach; ?>
+        </table>
 
 
     </div>
