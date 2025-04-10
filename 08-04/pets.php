@@ -6,6 +6,7 @@ $pets = [
     ["nome" => "Piu Piu", "tipo" => "Pássaro", "idade" => 2, "preco" => 150.00],
     ["nome" => "Nemo", "tipo" => "Peixe", "idade" => 1, "preco" => 45.90],
     ["nome" => "Thor", "tipo" => "Hamster", "idade" => 1.5, "preco" => 75.25]
+
 ];
 
 
@@ -19,7 +20,7 @@ $pets = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Pets</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aba.css">
 </head>
 <body>
 
@@ -36,14 +37,18 @@ $pets = [
 
 <?php foreach($pets as $pet):?>
 <tr>
-    <td><?= $pet['nome'] ?></td>
+    <td><?=$pet['nome'] ?></td>
     <td><?=$pet['tipo']?></td>
     <td><?=$pet['idade']?></td>
     <td><?=$pet['preco']?></td>
 </tr>
 <?php endforeach;?>
 
+
+
+
 </table>
+
 </div>
 
 
