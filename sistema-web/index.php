@@ -5,8 +5,9 @@ $consulta = "SELECT * FROM listas";
 
 // die vai matar a conexão do programa se não der certo 
 
-/* (->) esse operador é conhecido informalmente como seta,
-    serve para acessar propriedades ou métodos de um objeto
+/*
+     (->) esse operador é conhecido informalmente como seta,
+        serve para acessar propriedades ou métodos de um objeto
 */
 
 $con = $mysqli->query($consulta) or die($mysqli->error);
@@ -30,6 +31,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
 
     <div class="container">
         <?php
+
         include("nav.php");
 
         ?>
@@ -53,7 +55,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
                     <td><?php echo $dado["email"] ?></td>
                     <td><?php echo $dado["cidade"] ?></td>
                     <td class="text-center">
-                        <a href="excluir.php?codigo=<<?php echo $dado["id"] ?>">
+                        <a href="excluir.php?codigo=<?php echo $dado["id"] ?>">
                             <i class="bi-trash text-danger"></i>
                         </a>
                     </td>
